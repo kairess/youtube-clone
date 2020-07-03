@@ -1,0 +1,12 @@
+<!doctype html>
+<title>Hello from Flask</title>
+<h1>{{video.title}}</h1>
+
+<p>
+    조회수 {{video.views}} 회
+</p>
+
+<video width="1280" height="720" controls autoplay>
+    <source src="/static/{{video.video_path}}" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
